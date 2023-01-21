@@ -44,7 +44,6 @@ a {
 .auction {
   max-width: 80vw;
   margin: auto;
-  margin-top: 6em;
 }
 
 .auction-wrapper {
@@ -226,11 +225,6 @@ a {
 }
 
 @media screen and (max-width: 960px) {
-  .auction {
-    margin: auto;
-    margin-top: 6em;
-  }
-
   .auctions {
     margin-top: 3em;
     padding: 10px;
@@ -241,10 +235,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .auction {
-    margin: auto;
-  }
-
   .auction-wrapper .header .header-1 {
     max-width: 55vw;
   }
@@ -1238,8 +1228,6 @@ a {
   max-width: 80vw;
   height: 280px;
   margin: auto;
-  background-color: #4054c875;
-  border-radius: 32px;
 }
 
 .newsletter-wrapper {
@@ -1283,7 +1271,7 @@ a {
 
 .newsletter-wrapper .letter button {
   padding: 12px 1em;
-  position: relative;
+  position: absolute;
   right: 0;
   margin-right: 3em;
   border-radius: 20px;
@@ -1296,22 +1284,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .newsletter {
-    height: 25vh;
-    margin: auto;
-    background-color: rgb(225, 255, 244);
-    border-radius: 32px;
-  }
-
   .newsletter-wrapper {
     padding: 0;
-    height: 100%;
-    max-width: 80vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: flex-start;
+
+    justify-content: space-evenly;
   }
 
   .newsletter-wrapper .heading {
@@ -1336,16 +1312,10 @@ a {
 
   .newsletter-wrapper .letter button {
     padding: 15px 1em;
-    position: relative;
+    position: absolute;
     right: 0;
     margin-right: 0;
     border-radius: 10px;
-    border: none;
-    background-color: navy;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 12px;
-    cursor: pointer;
   }
 }
 
@@ -1732,7 +1702,6 @@ a {
 @media screen and (max-width: 960px) {
   .topart {
     margin: auto;
-    margin-top: 6em;
   }
 
   .topart-artists {
@@ -1776,7 +1745,6 @@ a {
 @media screen and (max-width: 600px) {
   .topart {
     margin: auto;
-    margin-top: 6em;
   }
 
   .topart-wrapper .header {
@@ -1912,14 +1880,10 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  .reasons {
-    margin-top: 6em;
-    height: 90vh;
-    position: relative;
-    overflow: none;
-  }
-
   .reasons-wrapper .container {
+    flex-direction: column;
+  }
+  .steps-wrapper .container {
     flex-direction: column;
   }
   .reasons-wrapper {

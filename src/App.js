@@ -21,7 +21,7 @@ function App() {
         </Routes>
         <Footer />
         <div className="box3">
-          Copyright ©️ 2022 CoLeDev, All right reserved.
+          Copyright ©️ 2022 NedxLab, All right reserved.
         </div>
       </Router>
     </div>
