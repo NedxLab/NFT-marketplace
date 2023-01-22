@@ -79,7 +79,9 @@ const Auction = () => {
 
                 <div className="details">
                   <div className="info">
-                    <div className="avatar">{item.owner[0]}</div>
+                    <div className="avatar">
+                      <img src={item.pic} className="avatar" alt={item.pic} />
+                    </div>
                     <div className="user">
                       <div className="owner">Created by</div>
                       <div className="name">{item.owner}</div>
