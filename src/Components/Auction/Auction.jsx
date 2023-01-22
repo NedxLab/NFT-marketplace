@@ -29,7 +29,7 @@ const Auction = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="auction">
+    <div className="auction" id="auctions">
       <div className="auction-wrapper">
         <div className="header">
           <div className="header-1">
@@ -79,7 +79,9 @@ const Auction = () => {
 
                 <div className="details">
                   <div className="info">
-                    <div className="avatar">{item.owner[0]}</div>
+                    <div className="avatar">
+                      <img src={item.pic} className="avatar" alt={item.pic} />
+                    </div>
                     <div className="user">
                       <div className="owner">Created by</div>
                       <div className="name">{item.owner}</div>

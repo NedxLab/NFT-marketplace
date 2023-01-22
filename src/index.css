@@ -791,6 +791,7 @@ a {
 }
 
 .profile-box-avatar {
+  display: block;
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -815,8 +816,10 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  display: block;
 }
 
+.profile-box .profile-name,
 .profile-box-options .profile-name {
   width: 80%;
   text-align: center;
@@ -925,15 +928,6 @@ a {
     position: relative;
   }
 
-  .profile-box-options {
-    position: relative;
-    width: 70vw;
-    height: 25vh;
-    padding: 10px;
-    right: -100%;
-    margin-right: 0;
-  }
-
   .profile-box-options .profile-name {
     width: 80%;
     text-align: center;
@@ -941,6 +935,9 @@ a {
     font-weight: 600;
     padding-bottom: 3px;
     border-bottom: 1px solid black;
+  }
+  .profile-box .profile-name {
+    font-size: 18px;
   }
 
   .profile-box-options > a {
@@ -1187,8 +1184,39 @@ a {
   font-size: 14px;
   font-weight: 500;
 }
-
 @media screen and (max-width: 960px) {
+  .flex-avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 1px solid black;
+    background-color: lightgray;
+  }
+  .profile-box {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .profile-box a {
+    padding: 0.24rem;
+  }
+  .profile-box .logout {
+    background-color: navy;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding: 0.3rem;
+    border: none;
+  }
+  .profile-box-options,
+  .profile-box-avatar {
+    display: none;
+  }
   .pcollections {
     margin-top: 2.7em;
   }
@@ -1198,6 +1226,7 @@ a {
     width: 100%;
     margin: auto;
     top: 0;
+    z-index: -3;
     right: 0;
     margin-top: 3em;
     display: flex;
@@ -1637,7 +1666,7 @@ a {
   }
 }
 .createnft {
-  margin-top: 10px;
+  margin-top: 3rem;
 }
 
 .createnft_wrapper {
@@ -1841,10 +1870,6 @@ input[type="file"] {
 }
 
 @media screen and (max-width: 960px) {
-  .createnft {
-    margin-top: 10px;
-  }
-
   .createnft_wrapper {
     margin: auto;
     padding-top: 2em;

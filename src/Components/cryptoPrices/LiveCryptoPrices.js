@@ -30,7 +30,7 @@ function MarketData() {
   var shib = data.RAW.SHIB.USD;
 
   return (
-    <div className="liveupdate">
+    <div className="liveupdate" id="prices">
       <table>
         <thead>
           <tr>

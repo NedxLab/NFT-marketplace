@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { MdOutlineShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
+import man from "../../Assets/man.jpg";
 
 const variants = {
   open: { height: 500, opacity: 1 },
@@ -13,6 +14,7 @@ const variants = {
 
 const Navbar = () => {
   const location = useLocation();
+
   const [layout, setLayout] = useState(false);
   const [opennav, setOpenNav] = useState(false);
   const [openprofile, setOpenProfile] = useState(false);
@@ -75,10 +77,18 @@ const Navbar = () => {
           </div>
 
           <div className="links">
-            <Link onClick={handleClose}>Join us</Link>
-            <Link onClick={handleClose}>Auctions</Link>
-            <Link onClick={handleClose}>Market Prices</Link>
-            <Link onClick={handleClose}>Top Collections</Link>
+            <a href="/#join" onClick={handleClose}>
+              Join us
+            </a>
+            <a href="/#auctions" onClick={handleClose}>
+              Auctions
+            </a>
+            <a href="/#prices" onClick={handleClose}>
+              Market Prices
+            </a>
+            <a href="/#collections" onClick={handleClose}>
+              Top Collections
+            </a>
           </div>
 
           <motion.div
@@ -88,10 +98,42 @@ const Navbar = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="links-active"
           >
-            <Link onClick={handleClose}>Join us</Link>
-            <Link onClick={handleClose}>Auctions</Link>
-            <Link onClick={handleClose}>Market Prices</Link>
-            <Link onClick={handleClose}>Top Collections</Link>
+            <a href="/#join" onClick={handleClose}>
+              Join us
+            </a>
+            <a href="/#auctions" onClick={handleClose}>
+              Auctions
+            </a>
+            <a href="/#prices" onClick={handleClose}>
+              Market Prices
+            </a>
+            <a href="/#collections" onClick={handleClose}>
+              Top Collections
+            </a>
+            <div className="flex-avatar" onClick={handleOpenProfile}>
+              <img className="flex-avatar" src={man} alt="" />
+            </div>
+            <div className="profile-box">
+              <Link className="profile-name" onClick={handleClose}>
+                Thomas Henderson
+              </Link>
+              <Link
+                to="/createnft"
+                className="create-nft"
+                onClick={handleClose}
+              >
+                Create New NFT
+              </Link>
+              <Link className="display-nfts" onClick={handleClose}>
+                Display NFTs
+              </Link>
+              <Link className="settings" onClick={handleClose}>
+                Settings
+              </Link>
+              <button className="logout" onClick={logout}>
+                Log Out
+              </button>
+            </div>
           </motion.div>
 
           {location.pathname === "/" ? null : (
@@ -103,14 +145,13 @@ const Navbar = () => {
 
           {localStorage.getItem("user") ? (
             <div className="profile-box">
-              <div
-                className="profile-box-avatar"
-                onClick={handleOpenProfile}
-              ></div>
+              <div className="profile-box-avatar" onClick={handleOpenProfile}>
+                <img className="profile-box-avatar" src={man} alt="" />
+              </div>
               {openprofile ? (
                 <div className="profile-box-options">
                   <Link className="profile-name" onClick={handleCloseProfile}>
-                    Collins Olads
+                    Thomas Henderson
                   </Link>
                   <Link
                     to="/createnft"
