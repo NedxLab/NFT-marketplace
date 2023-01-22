@@ -29,7 +29,7 @@ const Auction = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="auction">
+    <div className="auction" id="auctions">
       <div className="auction-wrapper">
         <div className="header">
           <div className="header-1">

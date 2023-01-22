@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="newsletter">
+    <div className="newsletter" id="join">
       <div className="newsletter-wrapper">
         <div className="heading">
           Signup for our newsletter to get the latest information in your inbox

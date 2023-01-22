@@ -9,7 +9,7 @@ const PCollections = () => {
   const data = DummyData;
 
   return (
-    <div className="pcollections">
+    <div className="pcollections" id="collections">
       <div className="pcollections-wrapper">
         <div className="header">
           <div className="head-1">
