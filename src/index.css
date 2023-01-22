@@ -801,7 +801,7 @@ a {
 }
 
 .profile-box-options {
-  position: relative;
+  position: absolute;
   background-color: white;
   box-shadow: 0px 1px 4px 1px rgba(119, 119, 119, 0.598);
   width: 200px;
@@ -816,7 +816,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  display: block;
 }
 
 .profile-box .profile-name,
@@ -844,7 +843,9 @@ a {
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  background-color: rgb(7, 249, 168);
+
+  border: none;
+  background-color: #3f51b5;
 }
 
 @media screen and (max-width: 600px) {
