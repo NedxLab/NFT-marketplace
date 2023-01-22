@@ -534,12 +534,6 @@ a {
     border-radius: 10px;
   }
 
-  .section1 section .head3 a:nth-child(1) span {
-    color: white;
-    font-weight: 600;
-    margin-left: 5px;
-  }
-
   .section1 section .head3 a:nth-child(2) {
     padding: 12px 0px;
     outline: 1px solid navy;
@@ -550,30 +544,7 @@ a {
   display: flex;
   flex-direction: row;
 }
-@media screen and (min-width: 601px) and (max-width: 960px) {
-  .hero {
-    padding: 1.5rem;
-    margin: auto;
-  }
-
-  .hero-wrapper {
-    display: grid;
-    justify-content: space-evenly;
-    position: relative;
-    align-items: center;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .section1 {
-    margin-left: 0;
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
-
-  .section1 section {
-    margin-left: 0;
-  }
-}
+/*  */
 .sections2 {
   position: absolute;
   display: flex;
@@ -990,86 +961,7 @@ a {
   width: 100%;
   background: #f0f8ffad;
 }
-/* @media screen and (min-width: 601px) and (max-width: 960px) {
-  .nav-wrapper .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin: auto;
-  }
 
-  .nav-wrapper .wrapper .searchbar {
-    display: block;
-  }
-
-  .nav-wrapper .wrapper .links {
-    display: none;
-  }
-
-  .lorem {
-    display: none;
-  }
-
-  .nav-active {
-    position: fixed;
-    margin-top: 1em;
-    width: 100%;
-    z-index: 30;
-  }
-
-  .nav-active .wrapper {
-    width: 90vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    animation: fadeIn ease 0.2s forwards;
-  }
-
-  .nav-active .searchbar {
-    display: block;
-  }
-
-  .nav-wrapper .wrapper .searchbar input,
-  .nav-active .wrapper .searchbar input {
-    width: 30vw;
-  }
-
-  .nav-active .links {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    font-size: 18px;
-  }
-
-  .nav-active .wrapper .links-active {
-    background-color: aliceblue;
-    position: relative;
-    width: 50%;
-    height: 70vh;
-    margin: auto;
-    top: 0;
-    right: 0;
-    margin-top: 3.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: fadeIn ease 0.2s forwards;
-  }
-
-  .nav-active .wrapper .links-active > a {
-    font-size: 18px;
-    margin: 15px 0;
-    font-weight: 600;
-  }
-} */
 .newsletter {
   max-width: 80vw;
   height: 280px;
