@@ -8,8 +8,14 @@ import { motion } from "framer-motion";
 import man from "../../Assets/man.jpg";
 
 const variants = {
-  open: { height: 500, opacity: 1 },
-  closed: { height: 0, opacity: 0 },
+  open: { height: 500, opacity: 1, display: "flex" },
+  closed: {
+    height: 0,
+    opacity: 0,
+    transitionEnd: {
+      display: "none",
+    },
+  },
 };
 
 const Navbar = () => {
@@ -92,7 +98,7 @@ const Navbar = () => {
           </div>
 
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
+            initial={{ height: 0, opacity: 0, display: "none" }}
             animate={opennav ? "open" : "closed"}
             variants={variants}
             transition={{ duration: 0.5, ease: "easeInOut" }}
