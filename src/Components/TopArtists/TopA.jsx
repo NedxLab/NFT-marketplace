@@ -26,12 +26,7 @@ const TopA = () => {
             data.map((item, id) => (
               <div className="artist-info" key={id}>
                 <div className="img">
-                  {item.owner.split(" ")[0].split("")[0]}{" "}
-                  {
-                    item.owner
-                      .split(" ")
-                      [item.owner.split(" ").length - 1].split("")[0]
-                  }
+                  <img src={item.pic} className="img" alt={item.pic} />
                 </div>
                 <div className="info">
                   <div className="name">{item.owner}</div>

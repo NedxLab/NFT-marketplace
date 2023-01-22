@@ -6,7 +6,7 @@ function MarketData() {
 
   useEffect(() => {
     getMarketData();
-    const interval = setInterval(getMarketData, 10000);
+    const interval = setInterval(getMarketData, 1000);
     return () => clearInterval(interval);
   }, []);
 

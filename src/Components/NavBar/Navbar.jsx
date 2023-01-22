@@ -75,10 +75,10 @@ const Navbar = () => {
           </div>
 
           <div className="links">
-            <Link onClick={handleClose}>New Items</Link>
-            <Link onClick={handleClose}>Featured Artist</Link>
-            <Link onClick={handleClose}>About Us</Link>
-            <Link onClick={handleClose}>Contact Us</Link>
+            <Link onClick={handleClose}>Join us</Link>
+            <Link onClick={handleClose}>Auctions</Link>
+            <Link onClick={handleClose}>Market Prices</Link>
+            <Link onClick={handleClose}>Top Collections</Link>
           </div>
 
           <motion.div
@@ -88,10 +88,10 @@ const Navbar = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="links-active"
           >
-            <Link onClick={handleClose}>New Items</Link>
-            <Link onClick={handleClose}>Featured Artist</Link>
-            <Link onClick={handleClose}>About Us</Link>
-            <Link onClick={handleClose}>Contact Us</Link>
+            <Link onClick={handleClose}>Join us</Link>
+            <Link onClick={handleClose}>Auctions</Link>
+            <Link onClick={handleClose}>Market Prices</Link>
+            <Link onClick={handleClose}>Top Collections</Link>
           </motion.div>
 
           {location.pathname === "/" ? null : (

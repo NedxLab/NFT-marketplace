@@ -1152,9 +1152,12 @@ a {
   font-size: 13px;
   color: white;
 }
-
+.likes svg path {
+  color: #950a0a;
+}
 .image-container .img-wrapper .likes p {
   margin-left: 4px;
+  color: white;
 }
 
 .image-container .avatar {
