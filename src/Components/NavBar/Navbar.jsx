@@ -4,6 +4,12 @@ import Logo from "../../Assets/nft.png";
 import { CiSearch } from "react-icons/ci";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { MdOutlineShoppingBasket } from "react-icons/md";
+import { motion } from "framer-motion";
+
+const variants = {
+  open: { height: 500, opacity: 1 },
+  closed: { height: 0, opacity: 0 },
+};
 
 const Navbar = () => {
   const location = useLocation();
@@ -68,12 +74,25 @@ const Navbar = () => {
             <CiSearch className="search-icon" />
           </div>
 
-          <div className={opennav ? "links-active" : "links"}>
+          <div className="links">
             <Link onClick={handleClose}>New Items</Link>
             <Link onClick={handleClose}>Featured Artist</Link>
             <Link onClick={handleClose}>About Us</Link>
             <Link onClick={handleClose}>Contact Us</Link>
           </div>
+
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={opennav ? "open" : "closed"}
+            variants={variants}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="links-active"
+          >
+            <Link onClick={handleClose}>New Items</Link>
+            <Link onClick={handleClose}>Featured Artist</Link>
+            <Link onClick={handleClose}>About Us</Link>
+            <Link onClick={handleClose}>Contact Us</Link>
+          </motion.div>
 
           {location.pathname === "/" ? null : (
             <div className="mint-cart">

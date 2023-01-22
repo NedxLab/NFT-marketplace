@@ -7,6 +7,7 @@ import PCollections from "../../Components/PopularCollections/PCollections";
 import Steps from "../../Components/Steps/Steps";
 import TopA from "../../Components/TopArtists/TopA";
 import WhyChooseUs from "../../Components/WhyChooseUs/WhyChooseUs";
+import MarketData from "../../Components/cryptoPrices/LiveCryptoPrices";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero />
       <Steps />
       <Auction />
+      <MarketData />
       <TopA />
       <PCollections />
       <WhyChooseUs />

@@ -32,9 +32,6 @@ const PCollections = () => {
                       <AiOutlineHeart /> <p>{item.likes}</p>
                     </div>
                   </div>
-                  <div className="avatar">
-                    {item.owner.split(" ")[0].split("")[0]}
-                  </div>
                 </div>
                 <div className="title">{item.title}</div>
                 <div className="owner">Created by {item.owner}</div>

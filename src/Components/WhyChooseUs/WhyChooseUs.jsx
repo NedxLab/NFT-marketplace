@@ -13,24 +13,30 @@ const WhyChooseUs = () => {
 
         <div className="container">
           <div className="cont-1">
-            <div className="h1">1. High-Quality Artworks</div>
+            <div className="h1">1. Smart Contract Solution</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              adipisci ipsum unde quae illo ipsa quo consectetur aliqu
+              A smart contract assigns a distinctive identifier to an NFT.
+              Currently, the most preferred is the ERC-721 standard for
+              developing non-fungible tokens.{" "}
             </p>
           </div>
           <div className="cont-1">
-            <div className="h1">2. Crypto Market Daily Reports</div>
+            <div className="h1">
+              2. IPFS (Interplanetary File System) Integration
+            </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              adipisci ipsum unde quae illo ipsa quo consectetur aliqu
+              It is a blockchain data storage system that consumes less energy
+              for storing digital content.
             </p>
           </div>
           <div className="cont-1">
-            <div className="h1">3. The Immersive World of NFTs</div>
+            <div className="h1">
+              3. A User-intuitive Marketplace Application
+            </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              adipisci ipsum unde quae illo ipsa quo consectetur aliqu
+              An NFT marketplace should be easy to explore and make it easier
+              for users to sell and buy NFTs. Both the client-side and the
+              server-side must exist.{" "}
             </p>
           </div>
         </div>
