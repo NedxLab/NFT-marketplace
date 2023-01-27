@@ -1,1 +1,2 @@
-A Frontend design of an NFT marketplace wih React
+A Frontend design of an NFT marketplace with React
+
